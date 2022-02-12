@@ -23,27 +23,7 @@ prixT1.innerHTML = prix1.innerHTML
 let total = document.getElementById("prix-total")
 total.innerHTML = parseInt(prixT.innerHTML) + parseInt(prixT1.innerHTML)
 
-// gestion des artuicles 
 
-let article1 = document.getElementById("article1")
-let article2 = document.getElementById("article2")
-let input1 = document.getElementById("te-article")
-let input2 = document.getElementById("t-article")
-let button = document.getElementById("ajouter")
-button.addEventListener("click", saisie)
-console.log(prix.innerHTML)
-
-function saisie() {
-    if (article1.innerHTML === input1.value) {
-        prix1.innerHTML = input2.value
-        prixT1.innerHTML = parseInt(effect.value) * parseInt(prix1.innerHTML)
-        total.innerHTML = parseInt(prixT.innerHTML) + parseInt(prixT1.innerHTML)
-    } else if (article2.innerHTML === input2.value) {
-        prix.innerHTML = input2.value
-        prixT.innerHTML = parseInt(effect1.value) * parseInt(prix.innerHTML)
-        total.innerHTML = parseInt(prixT.innerHTML) + parseInt(prixT1.innerHTML)
-    }
-}
 
 function decrementation() {
     if (!isNaN(parseInt(effect.value)) && parseInt(effect.value) > 1) {
