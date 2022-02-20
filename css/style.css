@@ -14,7 +14,7 @@ main {
     position: absolute;
     width: 100%;
     top: 110px;
-    padding: 0px 200px 0px 200px;
+    padding: 0px 100px 0px 100px;
 }
 
 thead {
@@ -24,7 +24,8 @@ thead {
 }
 
 th {
-    font-size: 17px;
+    font-size: 15px;
+    margin-right: 1rem;
 }
 
 table {
@@ -59,18 +60,21 @@ td {
 .produits div h5 {
     margin-bottom: 1rem;
     font-size: 1rem;
+    text-transform: capitalize;
 }
 
-.produits div a {
-    padding: 0.5rem;
+.produits div button {
+    padding: 0.3rem;
     border: none;
+    cursor: pointer;
     background: none;
-    font-size: 20px;
+    font-size: 15px;
     color: red;
     text-decoration: none;
 }
 
-#qty {
+.quantity {
+    margin-left: 1rem;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -85,7 +89,7 @@ td {
     border-bottom: 1px solid black;
 }
 
-#qty input {
+.quantity input {
     background-color: hsl(223, 64%, 98%);
     padding-left: 2rem;
     padding-right: 2rem;
@@ -96,7 +100,7 @@ td {
     margin: 1rem;
 }
 
-#qty button {
+.quantity button {
     background: none;
     border: none;
     cursor: pointer;
@@ -143,12 +147,16 @@ td {
 
 .total {
     position: absolute;
-    top: 650px;
-    left: 650px;
+    top: 700px;
+    left: 550px;
     color: #fff;
     font-size: 50px;
 }
 
 .total p span {
     color: red;
+}
+
+.color {
+    border: 1px solid red;
 }
