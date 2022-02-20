@@ -146,7 +146,7 @@ function prixTotal() {
     totalPrice.forEach((elt) => {
         sum = sum + parseInt(elt.innerHTML)
     })
-    console.log(prix.innerHTML = sum);
+    prix.innerHTML = `${sum} Fcfa`
 
 }
 
